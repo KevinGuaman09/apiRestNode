@@ -10,6 +10,8 @@ const userGet=(req,res=response)=>{
     })
 }
 const userPost=async(req,res=response)=>{
+    //retorno de errores
+ 
     const {nombre,correo,password,rol} = req.body;
     const usuario = new Usuario({nombre,correo,password,rol});
     //verificar si correo existe
